@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Ejemplo de HTML5" />
+    <meta name="keywords" content="HTML5, CSS3, JavaScript" />
+    <title>Cascos</title>
+    <link rel="icon" href="img/PaginaPrincipal/Barra.png" type="image/png" sizes="192x192">
+    <link href="css/casco.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header" id="principio">
+      <div class="logo">
+          <a href="index.html">
+              <img src="img/PaginaPrincipal/logo.png" alt="Logo de la página" />
+          </a>
+      </div>
+      <a href="#" id="menu-toggle" class="menu-icon">
+          <img src="img/iconos/menu.png" alt="Menú">
+      </a>
+      <ul class="nav-links">
+          <li><a href="bicicletas.html">Bicicletas</a></li>
+          <li><a href="accesorio.html">Accesorios</a></li>
+          <li><a href="casco.html">Cascos</a></li>
+          <li>
+              <h2 class="ver-carrito" id="verCarrito">
+                  <img src="img/iconos/shopping_cart.png" alt="" />
+                  <span id="cantidadCarrito" class="cantidad-carrito"></span>
+              </h2>
+          </li>
+      </ul>
+      <ul class="nav-links-mobile">
+          <li><a href="bicicletas.html">Bicicletas</a></li>
+          <li><a href="accesorio.html">Accesorios</a></li>
+          <li><a href="casco.html">Cascos</a></li>
+      </ul>
+    </header>
+
+    <!-- Carrucel -->
+    <div class="carrucel-general" id="carrucel-general">
+      <div class="grande"></div>
+    </div>
+
+    <ul class="puntos">
+        <li class="punto activo"></li>
+        <li class="punto"></li>
+        <li class="punto"></li>
+        <li class="punto"></li>
+    </ul>
+
+    <a href="#casco-container" class="ir-prod">Ver más</a>
+
+    <!-- Productos -->
+
+    <div id="casco-container" class="casco-container"></div>
+
+    <!-- Modal container -->
+    
+    <div id="modal-container" class="modal-container"></div>
+
+    <a href="#principio" class="volver-container"><img src="img/iconos/volver.png" alt="" class="volver"></a>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="redes">
+        <a href="https://www.twitter.com/" target="_blank" class="red-social">
+          <img src="img/iconos/twitter.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="red-social">
+          <img src="img/iconos/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" class="red-social">
+          <img src="img/iconos/facebook.png" alt="Facebook" />
+        </a>
+      </div>
+      <p>Todos los derechos reservados © 2023 - Bike Kings</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const menuIcon = document.querySelector(".menu-icon");
+          const navLinksMobile = document.querySelector(".nav-links-mobile");
+
+          menuIcon.addEventListener("click", function () {
+              navLinksMobile.style.display = navLinksMobile.style.display === "block" ? "none" : "block";
+          });
+      });
+    </script> 
+
+    <script src="js/productos.js"></script>
+    <script src="js/casco.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/carrucel.js"></script>
+  </body>
+</html>

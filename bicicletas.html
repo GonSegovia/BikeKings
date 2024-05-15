@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Ejemplo de HTML5" />
+    <meta name="keywords" content="HTML5, CSS3, JavaScript" />
+    <title>Bicicletas</title>
+    <link rel="icon" href="img/PaginaPrincipal/Barra.png" type="image/png" sizes="192x192">
+    <link rel="stylesheet" href="css/bicicletas.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="header" id="principio">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/PaginaPrincipal/logo.png" alt="Logo de la página" />
+            </a>
+        </div>
+        <a href="#" id="menu-toggle" class="menu-icon">
+            <img src="img/iconos/menu.png" alt="Menú">
+        </a>
+        <ul class="nav-links">
+            <li><a href="bicicletas.html">Bicicletas</a></li>
+            <li><a href="accesorio.html">Accesorios</a></li>
+            <li><a href="casco.html">Cascos</a></li>
+            <li>
+                <h2 class="ver-carrito" id="verCarrito">
+                    <img src="img/iconos/shopping_cart.png" alt="" />
+                    <span id="cantidadCarrito" class="cantidad-carrito"></span>
+                </h2>
+            </li>
+        </ul>
+        <ul class="nav-links-mobile">
+            <li><a href="bicicletas.html">Bicicletas</a></li>
+            <li><a href="accesorio.html">Accesorios</a></li>
+            <li><a href="casco.html">Cascos</a></li>
+        </ul>
+    </header>
+
+    <!-- Carrucel -->
+
+    <div class="carrucel-general">
+      <div class="grande">
+          <div id="carrucel-container" class="carrucel-container">
+              <div class="carrucel carrucel-0">
+                  <div class="img">
+                      <img src="img/Bicicletas/bike1.jpg" width="400px"/>
+                  </div>
+                  <div class="details">
+                      <div class="title">
+                          <h3>Road Monster <br/> <small>Bicicleta de carretera</small></h3>
+                      </div>
+                      <div class="description">
+                          <h4>Descripcion</h4>
+                          <p>
+                              La bicicleta de carretera Road Warrior de Bike Kings es el vehículo
+                              perfecto para conquistar cualquier camino. Su diseño aerodinámico y
+                              su estructura de alta calidad le permiten alcanza velocidades increíbles
+                              mientras se mantiene cómodo y seguro en cualquier terreno.
+                          </p>
+                      </div>
+                      <div class="rodado" id="rodado">
+                          <h4>Rodados</h4>
+                          <ul>
+                              <li>22</li>
+                              <li>24</li>
+                              <li>28</li>
+                          </ul>
+                      </div>
+                      <div class="buy">
+                          <div class="price">
+                              <span>$150</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="carrucel-container" class="carrucel-container">
+              <div class="carrucel carrucel-1">
+                  <div class="img">
+                      <img src="img/Bicicletas/bike2.jpg" width="400px"/>
+                  </div>
+                  <div class="details">
+                      <div class="title">
+                          <h3>CarbonX <br/> <small>Bicicleta de carretera</small></h3>
+                      </div>
+                      <div class="description">
+                          <h4>Descripcion</h4>
+                          <p>
+                              CarbonX es una bicicleta de carretera de alta gama diseñada
+                              para ofrecer un rendimiento superior en cualquier terreno.
+                              Fabricada con materiales de última generación, como el carbono
+                              de alta calidad, es extremadamente ligera y resistente al mismo tiempo.
+                          </p>
+                      </div>
+                      <div class="rodado">
+                          <h4>Rodados</h4>
+                          <ul>
+                              <li>20</li>
+                              <li>24</li>
+                              <li>26</li>
+                          </ul>
+                      </div>
+                      <div class="buy">
+                          <div class="price">
+                              <span>$200</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="carrucel-container" class="carrucel-container">
+              <div class="carrucel carrucel-2">
+                  <div class="img">
+                      <img src="img/Bicicletas/bike5.jpg" width="400px"/>
+                  </div>
+                  <div class="details">
+                      <div class="title">
+                          <h3>Thunderbolt <br/> <small>Bicicleta de montaña</small></h3>
+                      </div>
+                      <div class="description">
+                          <h4>Descripcion</h4>
+                          <p>
+                              La bicicleta Thunderbolt es una máquina diseñada para desafiar los terrenos
+                              más exigentes de la montaña. Su estructura resistente y su sistema de suspensión
+                              de alta gama te permiten disfrutar de una experiencia de conducción suave y controlada,
+                              mientras te aventuras por las rutas más empinadas y accidentadas.
+                          </p>
+                      </div>
+                      <div class="rodado">
+                          <h4>Rodados</h4>
+                          <ul class="producto">
+                              <li>22</li>
+                              <li>26</li>
+                              <li>28</li>
+                          </ul>
+                      </div>
+                      <div class="buy">
+                          <div class="price">
+                              <span>$250</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="carrucel-container" class="carrucel-container">
+              <div class="carrucel carrucel-3">
+                  <div class="img">
+                      <img src="img/Bicicletas/bike6.jpg" width="400px"/>
+                  </div>
+                  <div class="details">
+                      <div class="title">
+                          <h3>Trailblazer <br/> <small>Bicicleta de montaña</small></h3>
+                      </div>
+                      <div class="description">
+                          <h4>Descripcion</h4>
+                          <p>
+                              La bicicleta Trailblazer es la elección perfecta para los amantes
+                              de la montaña que buscan aventuras emocionantes en los senderos más
+                              desafiantes. Con su estructura resistente y su diseño agresivo, esta
+                              bicicleta ofrece una gran estabilidad y tracción en terrenos rocosos,
+                              empinados o irregulares.
+                          </p>
+                      </div>
+                      <div class="rodado">
+                          <h4>Rodados</h4>
+                          <ul>
+                              <li>20</li>
+                              <li>22</li>
+                              <li>26</li>
+                          </ul>
+                      </div>
+                      <div class="buy">
+                          <div class="price">
+                              <span>$300</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <ul class="puntos">
+        <li class="punto activo"></li>
+        <li class="punto"></li>
+        <li class="punto"></li>
+        <li class="punto"></li>
+    </ul>
+
+    <a href="#product-container" class="ir-prod">Ver más</a>
+
+    <!-- Productos -->
+
+    <div id="product-container" class="product-container"></div>
+
+    <!-- Modal container -->
+    
+    <div id="modal-container" class="modal-container"></div>
+
+    <a href="#principio" class="volver-container"><img src="img/iconos/volver.png" alt="" class="volver"></a>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="redes">
+          <a href="https://www.twitter.com/" target="_blank" class="red-social">
+            <img src="img/iconos/twitter.png" alt="Twitter" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="red-social">
+            <img src="img/iconos/instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" class="red-social">
+            <img src="img/iconos/facebook.png" alt="Facebook" />
+          </a>
+        </div>
+        <p>Todos los derechos reservados © 2023 - Bike Kings</p>
+    </footer>
+      
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const navLinksMobile = document.querySelector(".nav-links-mobile");
+
+            menuIcon.addEventListener("click", function () {
+                navLinksMobile.style.display = navLinksMobile.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script> 
+
+    <script src="js/carrucel.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/bicicletas.js"></script>
+    <script src="js/carrito.js"></script>
+  </body>
+</html>

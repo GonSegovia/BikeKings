@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; 
+}
+
+body{
+  background-color: whitesmoke
+}
+
+/* Diseño del header */
+.principal {
+  height: 100vh;
+  background-color: #242424;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/PaginaPrincipal/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Diseño del header */
+.header {
+  background-color: rgb(39, 39, 39);
+  display: flex;
+  justify-content: space-between; /* Alineación en la parte superior */
+  align-items: center;
+  height: 70px;
+  padding: 5px 3%;
+  position: relative;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para el menú hamburguesa en pantallas pequeñas */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-icon img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.menu-icon img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para la lista de navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 16px;
+}
+
+.nav-links a {
+  font-size: 18px;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #6fbc44;
+}
+
+/* Estilos para la lista de navegación en pantalla pequeña */
+.nav-links-mobile {
+  list-style: none;
+  display: none; /* Oculta la lista por defecto en pantallas más grandes */
+  background-color: rgb(39, 39, 39);
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 2; /* Asegura que el menú móvil esté por encima del carrusel */
+}
+
+.nav-links-mobile li {
+  display: block;
+  margin-right: 0;
+  padding: 10px 0;
+}
+
+.nav-links-mobile a {
+  font-size: 18px;
+  color: #f2f2f2;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-links-mobile li a:hover {
+  color: #6fbc44;
+}
+
+.ver-carrito{
+  cursor: pointer;
+}
+
+/* Info Header */
+
+.info_header {
+  margin-top: 12%;
+  align-items: center;
+  justify-content: center;
+}
+
+.info_header h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+.info_header p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 0 450px;
+  color: #f2f2f2;
+}
+
+/* Diseño de boton */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #242424;
+  color: #f2f2f2;
+  margin-right: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #f2f2f2;
+  color: #242424;
+}
+
+/* Formulario */
+
+.formulario{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form{
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 500px;
+  background-color: #f2f2f2;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+form h2{
+  color: #242424;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+label{
+  color: #242424;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+input, textarea{
+  padding: 17px 25px;
+  margin-bottom: 20px;
+  background-color: #bffa9f;
+  border: 2px solid #b2f88d;
+  color: #242424;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+  color: #9f9f9f;
+}
+
+.form-txt{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.form-txt a{
+  color: #6fbc44;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-btn{
+  font-size: 16px;
+  color: white;
+  background-color: #6fbc44;
+  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+  cursor: pointer;
+}
+
+.form-btn:hover{
+  background-color: #5fb431;
+}
+
+/* Estilos para el Footer */
+footer {
+  background-color: #242424;
+  padding: 15px;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.redes {
+  margin-bottom: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.red-social {
+  margin: 0 10px;
+  width: 40px;
+  height: 4+0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.red-social img {
+  width: 70%;
+  height: auto;
+}
+
+.red-social:hover {
+  transform: scale(1.1);
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+/* Estilos para mostrar el menú hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* Oculta la lista de navegación por defecto en pantallas pequeñas */
+  }
+
+  #menu-toggle:checked + .nav-links {
+    display: flex; /* Muestra la lista de navegación cuando se selecciona el menú hamburguesa */
+    flex-direction: column; /* Apila los elementos en la lista de navegación */
+    align-items: center; /* Centra los elementos en la lista de navegación */
+  }
+
+  .redes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .red-social {
+    margin: 10px;
+  }
+}

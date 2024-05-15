@@ -1,0 +1,667 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Diseño del header */
+.header {
+  background-color: rgb(39, 39, 39);
+  display: flex;
+  justify-content: space-between; /* Alineación en la parte superior */
+  align-items: center;
+  height: 70px;
+  padding: 5px 3%;
+  position: relative;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para el menú hamburguesa en pantallas pequeñas */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-icon img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.menu-icon img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para la lista de navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 16px;
+}
+
+.nav-links a {
+  font-size: 18px;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #6fbc44;
+}
+
+/* Estilos para la lista de navegación en pantalla pequeña */
+.nav-links-mobile {
+  list-style: none;
+  display: none; /* Oculta la lista por defecto en pantallas más grandes */
+  background-color: rgb(39, 39, 39);
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 2; /* Asegura que el menú móvil esté por encima del carrusel */
+}
+
+.nav-links-mobile li {
+  display: block;
+  margin-right: 0;
+  padding: 10px 0;
+}
+
+.nav-links-mobile a {
+  font-size: 18px;
+  color: #f2f2f2;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-links-mobile li a:hover {
+  color: #6fbc44;
+}
+
+.ver-carrito{
+  cursor: pointer;
+}
+
+/* Diseño del Carrucel */
+
+.carrucel-general{
+  margin-top: 50px;
+  left: 10%;
+  position: relative;
+  width: 80%;
+  max-width: 120em;
+  background-color: aquamarine;
+  overflow: hidden;
+  height: 380px; /* Cambia el valor de altura según tus necesidades */
+}
+
+.carrucel-general .grande{
+  width: 400%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  transition: all .5s ease;
+  transform: translateX(0%);
+}
+
+.carrucel-general .carrucel-container{
+  width: calc(100% / 4);
+  background-color: black;
+}
+
+.carrucel-container {
+  display: block;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrucel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.carrucel .img {
+  position: relative;
+  min-width: 400px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrucel .details {
+  position: relative;
+  background-color: #333333;
+  color: #eceff1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.carrucel .title{
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.carrucel .details .title small {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.carrucel .details h4 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.carrucel .description{
+  width: 90%;
+}
+  
+.carrucel .details .description p {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.colores {
+  margin-top: 10px;
+}
+
+.carrucel .details .colores ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start; /* Cambiar a justify-content: flex-start */
+}
+
+/* Estilo para los elementos de la lista de colores */
+.colores ul li {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Estilo para los elementos de la lista de colores */
+.colores ul li {
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.color0 {
+  background-color: #161620;
+}
+
+.color1 {
+  background-color: #45876f;
+}
+
+.color2 {
+  background-color: #b3b3bb;
+}
+
+.color3 {
+  background-color: #5b925c;
+}
+
+.color4 {
+  background-color: #0e0e0e;
+}
+
+.color5 {
+  background-color: #c727a2;
+}
+
+.color6 {
+  background-color: #6952ea;
+}
+
+.color7 {
+  background-color: #4ad72e;
+}
+
+.color8 {
+  background-color: #08060a;
+}
+
+.color9 {
+  background-color: #ff2020;
+}
+
+.color10 {
+  background-color: #9f9fa3;
+}
+
+.color11 {
+  background-color: #161616;
+}
+
+.color12 {
+  background-color: #2c2c2c;
+}
+
+.color13 {
+  background-color: #3db8a6;
+}
+
+.color14 {
+  background-color: #704177;
+}
+
+.color15 {
+  background-color: #3b9fe9;
+}
+
+.color16 {
+  background-color: #141414;
+}
+
+.color17 {
+  background-color: #9ba0ac;
+}
+
+.color18 {
+  background-color: #f7917a;
+}
+
+.color19 {
+  background-color: #181818;
+}
+
+.color20 {
+  background-color: #b7b3b0;
+}
+
+.color21 {
+  background-color: #d52d66;
+}
+
+.color22 {
+  background-color: #009998;
+}
+
+.color23 {
+  background-color: #121212;
+}
+
+.carrucel .details .buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.carrucel .details .buy .price {
+  font-size: 1.6em;
+}
+
+.puntos {
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+  
+.punto{
+  width: 12px; /* Ajusta el tamaño del círculo */
+  height: 12px; /* Ajusta el tamaño del círculo */
+  border-radius: 50%; /* Establece el radio para hacerlo circular */
+
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bebdbd;
+  margin-right: 5px;
+  cursor: pointer;
+}
+  
+.punto.activo{
+  background-color: rgb(105, 105, 105);
+}
+
+.ir-prod {
+  text-decoration: none;
+  display: block;
+  margin-top: 60px !important;
+  text-align: center;
+  width: fit-content;
+  font-size: 1.2em;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #6fbc44;
+  border-radius: 4px;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+.ir-prod:hover {
+  background-color: #000000;
+  transform: scale(1.1);
+}
+
+/* Diseño del Producto */
+
+.producto-container {
+  width: 81%;
+  margin-top: 210px !important;
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+  justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+}
+
+.product {
+  width: calc(25% - 20px);
+  margin: 10px;
+  background-color: #333;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product .details {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.product .details h3 {
+  color: #eceff1;
+  text-align: center; /* Centra el texto horizontalmente */
+  line-height: 1; /* Centra el texto verticalmente ajustando la altura de línea */
+  font-size: 1rem;
+}
+
+.product .details small {
+  color: #888;
+}
+
+.product .colores h4{
+  color: #eceff1;
+}
+
+.product .details .price {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #eceff1;
+}
+
+.colores .col{
+  display: flex;
+  justify-content: center;
+}
+
+.productos{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.product .btn{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.product .details .btn a {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.volver-container {
+  display: flex;
+  justify-content: flex-end; /* Esto alinea el contenido al final */
+  margin-right: 20px; /* Agrega margen derecho de 20px */
+  margin-bottom: 20px;
+}
+
+.volver{
+  background-color: #6fbc44;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+
+.seleccionado {
+  transform: scale(1.1); /* Aumentar el tamaño del botón cuando está activo o enfocado */
+  transition: all 0.2s; /* Agregar una transición suave */
+  border: 1px solid white; /* Agregar un borde blanco cuando está activo o enfocado */
+}
+
+/* Diseño del Modal */
+
+.modal-container{
+  width: 60%;
+  margin: 0 20%;
+  max-height: 88vh;
+  color: #fff;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar{
+  display: none;
+}
+
+.modal-header{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(39, 39, 39);
+  color: #fff;
+  width: 100%;
+}
+
+.modal-header-title{
+  font-size: 10px;
+}
+
+.modal-header-button {
+  margin-left: 600px;
+  cursor: pointer;
+}
+
+.modal-container > .modal-content1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 10px;
+}
+
+.modal-content1 > h3 {
+  margin-top: 10px;
+}
+
+.modal-content1 > p {
+  margin-top: 13px;
+}
+
+.modal-container > div > .imgCarrito{
+  height: 120px;
+  width: 120px;
+}
+
+.total-content{
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cantidad-carrito {
+  background-color: #6fbc44;
+  color: #333;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px;
+  top: 18px;
+  right: 53px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  display: none;
+  text-align: center; /* Centrar el texto horizontalmente */
+  line-height: 13px; /* Centrar verticalmente el contenido */
+}
+
+.delete-product {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.delete-product:hover {
+  transform: scale(1.3);
+}
+
+.sumar{
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.sumar:hover{
+  transform: scale(1.3);
+}
+
+.restar{
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.restar:hover{
+  transform: scale(1.3);
+}
+
+/* Estilos para el Footer */
+footer {
+  background-color: #242424;
+  padding: 15px;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.redes {
+  margin-bottom: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.red-social {
+  margin: 0 10px;
+  width: 40px;
+  height: 4+0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.red-social img {
+  width: 70%;
+  height: auto;
+}
+
+.red-social:hover {
+  transform: scale(1.1);
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+/* Estilos para mostrar el menú hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* Oculta la lista de navegación por defecto en pantallas pequeñas */
+  }
+
+  #menu-toggle:checked + .nav-links {
+    display: flex; /* Muestra la lista de navegación cuando se selecciona el menú hamburguesa */
+    flex-direction: column; /* Apila los elementos en la lista de navegación */
+    align-items: center; /* Centra los elementos en la lista de navegación */
+  }
+
+  .redes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .red-social {
+    margin: 10px;
+  }
+}
